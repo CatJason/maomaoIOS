@@ -29,6 +29,7 @@ struct ContentView: View {
                             .frame(width: 30, height: 30)
                         Text("首页")
                             .foregroundColor(.black) // 设置文字为黑色
+                            .frame(maxWidth: .infinity)
                     }
                     .padding()
                 }
@@ -43,6 +44,7 @@ struct ContentView: View {
                             .frame(width: 30, height: 30)
                         Text("发现")
                             .foregroundColor(.black) // 设置文字为黑色
+                            .frame(maxWidth: .infinity)
                     }
                     .padding()
                 }
@@ -55,8 +57,9 @@ struct ContentView: View {
                         Image("send")
                             .resizable()
                             .frame(width: 30, height: 30)
-                        Text("发布")
+                        Text("发送")
                             .foregroundColor(.black) // 设置文字为黑色
+                            .frame(maxWidth: .infinity)
                     }
                     .padding()
                 }
@@ -71,6 +74,7 @@ struct ContentView: View {
                             .frame(width: 30, height: 30)
                         Text("消息")
                             .foregroundColor(.black) // 设置文字为黑色
+                            .frame(maxWidth: .infinity)
                     }
                     .padding()
                 }
@@ -85,6 +89,7 @@ struct ContentView: View {
                             .frame(width: 30, height: 30)
                         Text("我的")
                             .foregroundColor(.black) // 设置文字为黑色
+                            .frame(maxWidth: .infinity)
                     }
                     .padding()
                 }
@@ -115,28 +120,28 @@ struct HomeView: View {
 
 struct SearchView: View {
     var body: some View {
-        Text("搜索页面")
+        Text("Discover Page")
             .foregroundColor(.black) // 设置文字为黑色
     }
 }
 
 struct NotificationsView: View {
     var body: some View {
-        Text("通知页面")
+        Text("Send Page")
             .foregroundColor(.black) // 设置文字为黑色
     }
 }
 
 struct MessagesView: View {
     var body: some View {
-        Text("消息页面")
+        Text("Message Page")
             .foregroundColor(.black) // 设置文字为黑色
     }
 }
 
 struct ProfileView: View {
     var body: some View {
-        Text("我的页面")
+        Text("My Page")
             .foregroundColor(.black) // 设置文字为黑色
     }
 }
